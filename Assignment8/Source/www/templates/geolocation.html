@@ -1,0 +1,26 @@
+<ion-view title="Home">
+    <ion-pane>
+        <ion-content ng-controller="myCtrl" style="background: url(../img/bg5.jpg);background-size:cover;">
+            </br>
+            <h2 align="center"></h2>
+            </br>
+            <button class="button button-block button-positive" ng-click="toggle()">
+                Get Location
+            </button>
+            <h3 align="center"> Location Coordinates: </h3   >
+            <div class="card">
+                <div class="item item-text-wrap">
+                    Latitude :39.0282396<span ng-bind="lat"></span>
+                </div>
+            </div>
+            </br>
+            </br>
+            <div class="card">
+                <div class="item item-text-wrap">
+                    Longitude :-94.577288<span ng-bind="long"></span>
+                </div>
+            </div>
+            <a class="button button-block button-positive" href="#/tab/restaurants">Nearby</a>
+        </ion-content>
+    </ion-pane>
+</ion-view>
