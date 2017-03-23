@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+
+    <script type="text/javascript" src="keys.js"></script>
+    <script type="text/javascript" src="index1.js"></script>
+    <script src="https://npmcdn.com/axios/dist/axios.min.js"></script>
+
+
+
+
+    <style>body{
+        background:url("scenic2.jpg")no-repeat center fixed;
+        background-size: cover;
+        padding:15px;}
+    </style>
+    <style>
+        div.center{
+            position: absolute;
+            left: 0;
+            top: 30%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+            border-radius: 25px;
+        }</style>
+     <style>
+        div.center1{
+            position: absolute;
+            left: 0;
+            top: 55%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }</style>
+     <style>
+        div.center2{
+            position: absolute;
+            left: 0;
+            top: 65%;
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }</style>
+
+    <style>
+        div.spbut {
+            position:absolute;
+            transition: .5s ease;
+            top: 470%;
+            left: 17%;
+
+        }
+    </style>
+</head>
+<body >
+
+
+
+<div class="center">
+    <input type="text" id="imgurl" style="font-size:18pt;height:35px;width:400px;border-radius: 15px;" placeholder=" Image URL"/>
+    <div>
+
+    <button style="border-radius: 10px;margin: 8px 0; width: 100px;" onclick="run(document.getElementById('imgurl').value)">Get Tags!</button>
+    </div>
+    <div class="spbut">
+        <input id="clickMe" type="button" value="Speak" style="border-radius: 10px;margin: 50px 0;width: 100px;left: 410px;" onclick="return speech()" />
+    </div>
+</div>
+<div align="right">
+<a href="http://localhost:63342/googleauth/index.html" onclick="signOut();"><button style="margin:5px;;border-radius: 10px;" >Sign out</button></a>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<table width="500" border="0" cellpadding="5" align="left">
+    <tr>
+
+        <td align="center" valign="center">
+            <div id="data_bef_img"></div>
+            <br />
+
+        </td>
+        <td align="center" valign="center">
+            <div id="check"></div>
+            <br />
+        </td>
+
+
+
+    </tr>
+    <tr>
+        <td align="center" valign="center">
+            <div id="data_for_img"></div>
+            <br />
+
+        </td>
+        <td align="center" valign="center">
+            <div id="tags"></div>
+            <br />
+        </td>
+
+
+
+
+
+    </tr>
+
+
+</table>
+
+
+
+<div class="center1">
+    <div terget="frame1" id="tags"></div></div><div class="center2">
+    <div id="demo"></div></div>
+
+</body >
+</html>
